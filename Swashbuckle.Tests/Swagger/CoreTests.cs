@@ -1,12 +1,10 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using NUnit.Framework;
+﻿using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Linq;
-using Swashbuckle.Application;
+using System.Net;
+using System.Web.Http;
+using Newtonsoft.Json.Linq;
+using NUnit.Framework;
 using Swashbuckle.Dummy;
 using Swashbuckle.Dummy.Controllers;
 using Swashbuckle.Dummy.SwaggerExtensions;

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Net.Http;
+using System.Diagnostics;
 using System.Net;
 using NUnit.Framework;
 using Swashbuckle.Application;
 using Swashbuckle.Dummy;
-using Swashbuckle.SwaggerUi;
 
 namespace Swashbuckle.Tests.SwaggerUi
 {
@@ -173,7 +172,7 @@ namespace Swashbuckle.Tests.SwaggerUi
         {
             var response = Get(resourceUri);
 
-            System.Diagnostics.Debug.WriteLine(string.Format("[{0}] {1} => {2}", response.StatusCode, resourceUri, response.Content.Headers.ContentType.MediaType));
+            Debug.WriteLine(string.Format("[{0}] {1} => {2}", response.StatusCode, resourceUri, response.Content.Headers.ContentType.MediaType));
 
             Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
 

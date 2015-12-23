@@ -1,2 +1,2 @@
-﻿var str1 = "hello";
+﻿var str1 = 'hello';
 alert(str1);

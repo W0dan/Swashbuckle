@@ -1,14 +1,12 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
+using System.Net.Http.Formatting;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Net.Http.Formatting;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using System.Collections.Generic;
 using Swashbuckle.Swagger;
-using System.Net;
 
 namespace Swashbuckle.Application
 {

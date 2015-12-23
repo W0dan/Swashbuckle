@@ -1,17 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Dynamic;
 using System.Linq;
-using System.Net.Http;
-using System.Reflection;
-using System.Text;
-using System.Web.Http;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json.Converters;
-using System.Net.Http.Formatting;
+using Newtonsoft.Json.Serialization;
 
 namespace Swashbuckle.Swagger
 {

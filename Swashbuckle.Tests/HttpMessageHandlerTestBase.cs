@@ -1,17 +1,12 @@
-﻿using System.Net;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using NUnit.Framework;
-using Swashbuckle.Application;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Reflection;
 using System.Threading;
 using System.Web.Http;
 using System.Web.Http.Hosting;
 using System.Web.Http.Routing;
-using Swashbuckle.Dummy.Controllers;
-using System.Reflection;
+using NUnit.Framework;
 
 namespace Swashbuckle.Tests
 {

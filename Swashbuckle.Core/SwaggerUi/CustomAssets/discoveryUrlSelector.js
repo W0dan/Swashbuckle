@@ -14,7 +14,7 @@
 
                 var rootUrl = this.options.rootUrl;
                 _.each(this.options.discoveryPaths, function(path) {
-                    var option = $('<option>' + rootUrl + "/" + path + '</option>');
+                    var option = $('<option>' + rootUrl + '/' + path + '</option>');
                     select.append(option);
                 });
 

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Web.Http;
-using Newtonsoft.Json;
 using Swashbuckle.Application;
-using Swashbuckle.Swagger;
-using NUnit.Framework;
 
 namespace Swashbuckle.Tests.Swagger
 {

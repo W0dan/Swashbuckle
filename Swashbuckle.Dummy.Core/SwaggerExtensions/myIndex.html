@@ -29,7 +29,7 @@
       if (url && url.length > 1) {
         url = url[1];
       } else {
-        url = "http://petstore.swagger.wordnik.com/v2/swagger.json";
+        url = 'http://petstore.swagger.wordnik.com/v2/swagger.json';
       }
 
       // Get Swashbuckle config into JavaScript
@@ -48,13 +48,13 @@
 
       window.swaggerUi = new SwaggerUi({
         url: sbConfig.rootUrl + sbConfig.discoveryPaths[0],
-        dom_id: "swagger-ui-container",
+        dom_id: 'swagger-ui-container',
         supportHeaderParams: sbConfig.supportHeaderParams,
         supportedSubmitMethods: sbConfig.supportedSubmitMethods,
         onComplete: function(swaggerApi, swaggerUi){
-          log("Loaded SwaggerUI");
+          log('Loaded SwaggerUI');
 
-          if(typeof initOAuth == "function" && sbConfig.oAuth2Enabled) {
+          if(typeof initOAuth == 'function' && sbConfig.oAuth2Enabled) {
             initOAuth({
               clientId: sbConfig.oAuth2ClientId,
               realm: sbConfig.oAuth2Realm,
@@ -72,18 +72,18 @@
           });
         },
         onFailure: function(data) {
-          log("Unable to Load SwaggerUI");
+          log('Unable to Load SwaggerUI');
         },
         docExpansion: sbConfig.docExpansion,
-        sorter : "alpha"
+        sorter : 'alpha'
       });
 
       function addApiKeyAuthorization() {
         var key = $('#input_apiKey')[0].value;
-        log("key: " + key);
-        if(key && key.trim() != "") {
-            log("added key " + key);
-            window.authorizations.add("api_key", new ApiKeyAuthorization("api_key", key, "query"));
+        log('key: ' + key);
+        if(key && key.trim() != '') {
+            log('added key ' + key);
+            window.authorizations.add('api_key', new ApiKeyAuthorization('api_key', key, 'query'));
         }
       }
 

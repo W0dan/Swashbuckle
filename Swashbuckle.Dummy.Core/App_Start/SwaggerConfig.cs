@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Linq;
-using System.Net.Http;
 using System.Web.Http;
-using System.Collections.Generic;
 using System.Web.Http.Description;
 using System.Web.Http.Routing.Constraints;
 using Swashbuckle.Application;
-using Swashbuckle.Dummy.Controllers;
-using Swashbuckle.Dummy.SwaggerExtensions;
 using Swashbuckle.Dummy.App_Start;
+using Swashbuckle.Dummy.SwaggerExtensions;
 
 namespace Swashbuckle.Dummy
 {

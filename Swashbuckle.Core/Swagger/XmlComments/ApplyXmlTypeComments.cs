@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Xml.XPath;
-using System.Linq;
-using System.Collections.Generic;
-using System.Text;
 using System.Reflection;
-using Newtonsoft.Json.Serialization;
-using Swashbuckle.Swagger;
+using System.Xml.XPath;
 
 namespace Swashbuckle.Swagger.XmlComments
 {

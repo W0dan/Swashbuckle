@@ -99,7 +99,7 @@ function handleLogin() {
 
     var authSchemes = window.swaggerUi.api.authSchemes;
     var host = window.location;
-    var pathname = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
+    var pathname = location.pathname.substring(0, location.pathname.lastIndexOf('/'));
     var defaultRedirectUrl = host.protocol + '//' + host.host + pathname + '/o2c-html';
     var redirectUrl = window.oAuthRedirectUrl || defaultRedirectUrl;
     var url = null;
@@ -219,7 +219,7 @@ window.processOAuthCode = function processOAuthCode(data) {
   $.ajax(
   {
     url : window.swaggerUi.tokenUrl,
-    type: "POST",
+    type: 'POST',
     data: params,
     success:function(data, textStatus, jqXHR)
     {
@@ -227,7 +227,7 @@ window.processOAuthCode = function processOAuthCode(data) {
     },
     error: function(jqXHR, textStatus, errorThrown)
     {
-      onOAuthComplete("");
+      onOAuthComplete('');
     }
   });
 }

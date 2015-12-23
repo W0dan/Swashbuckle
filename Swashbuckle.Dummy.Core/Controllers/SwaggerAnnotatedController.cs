@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Web.Http;
-using Newtonsoft.Json.Linq;
-using Swashbuckle.Swagger.Annotations;
 using Swashbuckle.Dummy.SwaggerExtensions;
+using Swashbuckle.Swagger.Annotations;
 
 namespace Swashbuckle.Dummy.Controllers
 {
